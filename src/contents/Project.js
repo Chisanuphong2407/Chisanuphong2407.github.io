@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Social from "../components/Social";
 import miniProject from "../asset/miniProject.mp4";
 import Projectcard from "../components/Projectcard";
 import Bigproject from "../asset/Bigproject.mp4"
