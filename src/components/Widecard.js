@@ -3,16 +3,26 @@ import React, { Component } from "react";
 class Widecard extends Component {
   render() {
     return (
-      <div className="widecard">
-        <img src={this.props.img} className="schoolpic" />
-        <div className="widecard-con">
-          <h3>{this.props.title}</h3>
-          <h4 className="secondtext">{this.props.where}</h4>
-          <h4 className="secondtext">
-            {this.props.from} - {this.props.to}
-          </h4>
+      // ใช้ props ที่ส่งเข้ามาสำหรับ className และ style
+        <div
+          className={`widecard ${this.props.classNameProp || ""}`}
+          style={this.props.styleProp}
+        >
+          <img
+            src={this.props.img}
+            alt={this.props.title}
+            className="widecard-image"
+          />
+
+          <div className="widecard-con">
+            <h3>{this.props.title}</h3>
+            <h4>{this.props.where}</h4>
+            <p>{this.props.detail}</p>
+            <p>
+              {this.props.from} - {this.props.to}
+            </p>
+          </div>
         </div>
-      </div>
     );
   }
 }
