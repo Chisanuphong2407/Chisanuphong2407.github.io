@@ -1,14 +1,20 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component} from "react";
+import { NavLink } from "react-router-dom";
 
 class Navitems extends Component {
-    render(){
-        return(
-            <li id ={this.props.item}>
-                <Link to={this.props.tolink}>{this.props.item}</Link>
-            </li>
-        )
-    }
+  render() {
+    const {item,tolink } = this.props;
+    return (
+      <li id={item} className="nav-link">
+        <NavLink
+          to={tolink}
+          className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+        >
+          {this.props.item}
+        </NavLink>
+      </li>
+    );
+  }
 }
 
-export default Navitems
+export default Navitems;

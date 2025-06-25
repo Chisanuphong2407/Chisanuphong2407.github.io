@@ -8,6 +8,7 @@ import Home from "./contents/Home";
 import Education from "./contents/education";
 import About from "./contents/About";
 import Skills from "./contents/skills";
+import Contact from "./contents/Contact";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/About" element={<About />}></Route>
           <Route path="/Education" element={<Education />}></Route>
           <Route path="/Skills" element={<Skills />}></Route>
+          <Route path="/Contact" element={<Contact />}></Route>
         </Routes>
       </div>
     </Router>

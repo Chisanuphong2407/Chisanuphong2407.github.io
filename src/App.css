@@ -1,8 +1,8 @@
 :root {
   --sidebar-flex: 1.5;
-  --fontsize-p: 1.2rem;
+  --fontsize-p: 2.2rem;
   --condiv-flex: 6;
-  --fontsize-nav: 1.6rem;
+  --fontsize-nav: 2.6rem;
   --typing-font: 2rem;
 }
 
@@ -30,30 +30,52 @@ nav ul {
   list-style: none;
 }
 
-nav ul li {
+.nav-link {
   margin: 40px;
+  transition: font-weight 0.1s ease-in-out,
+    /* เปลี่ยนความหนาของฟอนต์ 0.3 วินาที */ font-size 0.1s ease-in-out;
 }
 
 nav ul li a {
   color: black;
   text-decoration: none;
-  font-weight: bold;
+}
+
+.nav-link:hover {
+  font-size: 3rem;
+}
+
+.nav-link.active {
+  font-weight: bolder;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .condiv {
   padding: 100px;
-  background-color: #f9f9f9;
+  background-color: #fcfcf4;
   flex: var(--condiv-flex);
 }
-
 
 .Home {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  opacity: 0; /* เริ่มต้นด้วยการซ่อน */
+  animation: fadeIn 0.7s forwards;
 }
 
+.Home h1 {
+  font-size: 50px;
+}
 .profilepic {
   border-radius: 50%;
   width: 400px;
@@ -70,7 +92,7 @@ nav ul li a {
 
 .social i {
   padding-right: 30px;
-  font-size: 25px;
+  font-size: 30px;
   color: #9a9b9c;
 }
 
@@ -87,19 +109,27 @@ nav ul li a {
   text-align: center;
 }
 
+.Aboutcontent {
+  opacity: 0;
+  animation: fadeIn 0.7s forwards;
+}
+
 .About h3 {
-  font-size: 30px;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  margin: 10px 10px 20px 10px
+  opacity: 0;
+  font-size: 40px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 10px 10px 20px 10px;
 }
 
 .About p {
   text-align: left;
-  text-indent: 3rem;
+  text-indent: 4rem;
+  font-size: 30px;
 }
 
 .subtopic {
-  margin: 10px 10px 30px 10px
+  margin: 10px 10px 30px 10px;
+  font-size: 60px;
 }
 
 .schoolpic {
@@ -111,34 +141,49 @@ nav ul li a {
 
 .widecard {
   display: flex;
-  margin:30px 30px 30px 10px;
-  transition: .3s;
+  margin: 30px 30px 30px 10px;
+  transition: 0.3s;
   border-radius: 10px;
-  padding:.5rem
+  padding: 0.5rem;
+  animation: Slidein 0.7s forwards;
 }
 
 .widecard:hover {
-  color:#f9f9f9;
-  background:#1C2E4A;
+  color: #f9f9f9;
+  background: #1c2e4a;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 3);
 }
 
 .widecard-con {
-  text-align:left;
-  margin:5px auto auto 10px;
+  text-align: left;
+  margin: 5px auto auto 10px;
   font-size: 30px;
 }
 
 .skills ul {
   display: flex;
-  background-color: #1C2E4A;
   border-radius: 10px;
-  color: #fff;
   font-size: 25px;
   flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
 }
 
 .skills li {
   list-style: none;
   margin: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.language-logo {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.contact-det {
+  font-size: 20px;
+  margin: 20px 0px 20px 10px;
 }
