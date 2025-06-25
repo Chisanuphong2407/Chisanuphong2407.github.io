@@ -1,11 +1,11 @@
 import React,{ Component } from 'react'
-import navitems from './Navitems'
+import Navitems from './Navitems'
 
 class Navbar extends Component {
     constructor(props) {
         super(props);
         this.state= {
-            "Navitemactive": ''
+            "NavItemActive": ''
         }
     }
 
@@ -13,13 +13,15 @@ class Navbar extends Component {
         return(
             <nav>
                 <ul>
-                    <navitems item="Home" tolink="/"></navitems>
-                    <navitems item="About me" tolink="/About"></navitems>
-                    <navitems item="Education" tolink="/Education"></navitems>
-                    <navitems item="skills" tolink="/skills"></navitems>
-                    <navitems item="contact" tolink="/contact"></navitems>
+                    <Navitems item="Home" tolink="/"></Navitems>
+                    <Navitems item="About me" tolink="/About"></Navitems>
+                    <Navitems item="Education" tolink="/Education"></Navitems>
+                    <Navitems item="skills" tolink="/skills"></Navitems>
+                    <Navitems item="contact" tolink="/contact"></Navitems>
                 </ul>
             </nav>
         )
     }
 }
+
+export default Navbar

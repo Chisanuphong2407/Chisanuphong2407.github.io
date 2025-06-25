@@ -9,8 +9,15 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.2",
     "react-scripts": "^5.0.1",
+    "react-typed": "^2.0.12",
+    "react-typing-effect": "^2.0.5",
     "web-vitals": "^2.1.4"
+  },
+  "resolutions": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
