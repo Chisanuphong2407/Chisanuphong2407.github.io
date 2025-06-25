@@ -56,7 +56,7 @@ class Skills extends Component {
           name: "Postman",
           logo: "https://iconape.com/wp-content/files/sw/371325/svg/371325.svg",
         },
-                {
+        {
           id: 11,
           name: "express.js",
           logo: "https://seekvectors.com/files/download/express.js-logo.png",
@@ -67,25 +67,27 @@ class Skills extends Component {
 
   render() {
     const { languagesData } = this.state;
+    const delaystep = 0.2;
     return (
       <div className="condiv skills">
-        <h1>
-          <ul>
-            {languagesData.map((language) => {
-              // Rename 'value' to 'language' for clarity
-              return (
-                <li key={language.id} className="language-item">
-                  <img
-                    src={language.logo}
-                    alt={language.name}
-                    className="language-logo"
-                  />
+        <h1 className="subtopic">My skills</h1>
+        <ul>
+          {languagesData.map((language,index) => {
+            const animationDelay = index * delaystep;
+            return (
+              <li key={language.id} className="language-item" style={{ animationDelay: `${animationDelay}s` }}>
+                <img
+                  src={language.logo}
+                  alt={language.name}
+                  className="language-logo"
+                />
+                <h3>
                   <p className="language-name">{language.name}</p>
-                </li>
-              );
-            })}
-          </ul>
-        </h1>
+                </h3>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     );
   }
