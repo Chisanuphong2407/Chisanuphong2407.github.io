@@ -21,7 +21,7 @@ class Projectcard extends Component {
             Your browser does not support the video tag.
           </video>
 
-          <div className="widecard-con">
+          <div className="projectcard-con">
             <h3>{this.props.title}</h3>
             <h4>tools: {this.props.tools}</h4>
             <p>{this.props.detail}</p>
