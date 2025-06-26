@@ -12,7 +12,7 @@ class Project extends Component {
         tools: "React Native,expo,Node.js",
         video: miniProject,
         detail:"ในโปรเจคนี้เป็นมินิโปรเจคที่พัฒนาในการเรียนวิชา Mobile application ซึ่งเป็นโปรเจคที่ผู้พัฒนาได้ฝึกและทดลองเกี่ยวกับการใช้ component ต่างๆ ในการพัฒนา",
-        link: 'https://github.com/Chisanuphong2407/card-came-catelog'
+        link: 'https://snack.expo.dev/@crmm/github.com-chisanuphong2407-card-came-catelog'
       },
       {
         title: "ระบบจัดการแข่งขัน TCG (กำลังศึกษาและพัฒนา)",

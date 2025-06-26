@@ -12,7 +12,7 @@ class Home extends Component {
         <p className="typingeffect">
           <ReactTyped
             strings={[
-              "Hi visiter, Welcome to my Portfolio!",
+              "Hi visitor, Nice to meet you.",
               "I'm Chisanuphong, a Developer.",
             ]}
             typeSpeed={50}
