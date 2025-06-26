@@ -31,7 +31,7 @@ nav ul {
 }
 
 .nav-link {
-  margin: 40px;
+  margin: 20px;
   transition: font-weight 0.1s ease-in-out,
     /* เปลี่ยนความหนาของฟอนต์ 0.3 วินาที */ font-size 0.1s ease-in-out;
 }
