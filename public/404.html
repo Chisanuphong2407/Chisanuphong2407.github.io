@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+           // Get the original full path including query and hash
+      var fullPath = window.location.pathname + window.location.search + window.location.hash;
+
+      // Redirect to the index.html at the root of the domain,
+      // and pass the original full path as the hash for React Router to pick up.
+      window.location.replace('/index.html#' + fullPath.slice(1));
+    </script>
+  </head>
+  <body></body>
+</html>
