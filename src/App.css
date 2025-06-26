@@ -14,14 +14,14 @@
 
 .App {
   display: flex;
-  width: 95vw;
+  width: 100vw;
   min-height: 100vh;
 }
 
 nav {
   padding: 60px 30px 0px 30px;
   flex: var(--sidebar-flex);
-  background: #f8e7a1;
+  background: #FAEAB1;
 }
 
 nav ul {
@@ -31,7 +31,7 @@ nav ul {
 }
 
 .nav-link {
-  margin: 40px;
+  margin: 20px;
   transition: font-weight 0.1s ease-in-out,
     /* เปลี่ยนความหนาของฟอนต์ 0.3 วินาที */ font-size 0.1s ease-in-out;
 }
@@ -129,7 +129,7 @@ nav ul li a {
 .About h3 {
   opacity: 0;
   font-size: 40px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   /* margin: 10px 10px 20px 10px; */
 }
 
@@ -145,6 +145,8 @@ nav ul li a {
 }
 
 .widecard-image {
+  display: flex;
+  flex: 1;
   border-radius: 10px;
   min-width: 200px;
   min-height: 200px;
@@ -159,6 +161,23 @@ nav ul li a {
   transition: 0.3s;
   border-radius: 10px;
   padding: 0.5rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.projectcard {
+  display: flex;
+  margin: 30px 30px 30px 10px;
+  transition: 0.3s;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background: #DDC994;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.projectcard:hover {
+  color: #f9f9f9;
+  background: #1c2e4a;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 3);
 }
 
 .widecard-animated {
@@ -172,8 +191,11 @@ nav ul li a {
 }
 
 .widecard-con {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   text-align: left;
-  margin: 60px 40px auto 40px;
+  margin: 40px 40px auto 40px;
   font-size: 30px;
 }
 

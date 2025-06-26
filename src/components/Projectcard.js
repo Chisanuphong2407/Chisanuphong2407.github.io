@@ -5,9 +5,14 @@ class Projectcard extends Component {
   render() {
     return (
       // ใช้ props ที่ส่งเข้ามาสำหรับ className และ style
-      <Link to={this.props.linkTo} className="Linkproject">
+      <Link
+        to={this.props.linkTo}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="Linkproject"
+      >
         <div
-          className={`widecard ${this.props.classNameProp || ""}`}
+          className={`projectcard ${this.props.classNameProp || ""}`}
           style={this.props.styleProp}
         >
           <video className="widecard-video" controls muted autoPlay loop>

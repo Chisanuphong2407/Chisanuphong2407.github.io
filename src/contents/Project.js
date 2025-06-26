@@ -8,11 +8,11 @@ class Project extends Component {
     const delaystep = 0.2;
     const project = [
       {
-        title: "แคตตาล็อกเกี่ยวกับการ์ดเกม",
+        title: "แคตตาล็อกเกี่ยวกับการ์ดเกม (ไม่เชื่อม database)",
         tools: "React Native,expo,Node.js",
         video: miniProject,
         detail:"ในโปรเจคนี้เป็นมินิโปรเจคที่พัฒนาในการเรียนวิชา Mobile application ซึ่งเป็นโปรเจคที่ผู้พัฒนาได้ฝึกและทดลองเกี่ยวกับการใช้ component ต่างๆ ในการพัฒนา",
-        link: 'https://github.com/Chisanuphong2407/card-came-catelog'
+        link: 'https://snack.expo.dev/@crmm/github.com-chisanuphong2407-card-came-catelog'
       },
       {
         title: "ระบบจัดการแข่งขัน TCG (กำลังศึกษาและพัฒนา)",
