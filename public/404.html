@@ -4,34 +4,12 @@
     <meta charset="utf-8" />
     <title>Redirecting...</title>
     <script>
-      // Function to redirect to index.html while preserving the path
-      var pathSegmentsToKeep = 0; // Number of path segments to keep from the original URL
+           // Get the original full path including query and hash
+      var fullPath = window.location.pathname + window.location.search + window.location.hash;
 
-      var l = window.location;
-      var pathWithoutHash = l.pathname.replace(/^#/, ''); // Remove leading hash if present
-
-      // Handle query parameters and existing hash
-      var query = l.search;
-      var hash = l.hash;
-
-      // Build the new path by removing segments until we reach the root for the React app
-      var path = pathWithoutHash.split('/');
-      path = path.slice(0, pathSegmentsToKeep + 1); // Keep the base path (e.g., /repo-name/ or / for user page)
-
-      // Redirect to the index.html at the root of the GitHub Pages site
-      // and append the original full path, query, and hash as the new hash for React Router to pick up.
-      // This is crucial for BrowserRouter.
-      l.replace(
-        l.protocol +
-          '//' +
-          l.hostname +
-          (l.port ? ':' + l.port : '') +
-          path.join('/') +
-          'index.html#' + // << --- Redirect to index.html then use hash
-          pathWithoutHash.slice(pathSegmentsToKeep + 1) + // Add remaining path segments
-          query +
-          hash
-      );
+      // Redirect to the index.html at the root of the domain,
+      // and pass the original full path as the hash for React Router to pick up.
+      window.location.replace('/index.html#' + fullPath.slice(1));
     </script>
   </head>
   <body></body>
