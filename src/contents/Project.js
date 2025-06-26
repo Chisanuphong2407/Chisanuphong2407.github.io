@@ -18,7 +18,7 @@ class Project extends Component {
         title: "ระบบจัดการแข่งขัน TCG (กำลังศึกษาและพัฒนา)",
         tools: "React Native,expo,Node.js,express.js,Mysql,RestfulApi",
         video: Bigproject,
-        detail:"โปรเจคนี้เป็นปริญญานิพนธ์ เป็นระบบการจัดการแข่งขันการ์ดเกมประกอบด้วยระบการสร้างกิจกรรม สมัคร และทำการแข่งขัน พัฒนาในแพลตฟอร์ม Mobile",
+        detail:"โปรเจคนี้เป็นปริญญานิพนธ์ เป็นระบบการจัดการแข่งขันการ์ดเกมประกอบด้วยระบบการสร้างกิจกรรม สมัคร และทำการแข่งขัน พัฒนาในแพลตฟอร์ม Mobile",
         link: 'https://github.com/Chisanuphong2407/TCGCompanions'
       },
     ];
