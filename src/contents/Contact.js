@@ -9,9 +9,10 @@ class Contact extends Component {
         <div className="contact-det">
           <h3>Facebook: Mel Chitsanupong</h3>
           <h3>Email: Chisanupong2407@gmail.com </h3>
-          <h3>instagram: Mel.crmm</h3>
         </div>
-        <Social />
+        <div className="contactPosition">
+          <Social />
+        </div>
       </div>
     );
   }

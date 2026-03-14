@@ -19,7 +19,9 @@ class Home extends Component {
             loop
           />
         </p>
-        <Social />
+        <div>
+          <Social />
+        </div>
       </div>
     );
   }
