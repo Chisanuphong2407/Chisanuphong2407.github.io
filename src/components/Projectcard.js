@@ -5,13 +5,6 @@ class Projectcard extends Component {
   render() {
     if (this.props.link2To) {
       return (
-        // ใช้ props ที่ส่งเข้ามาสำหรับ className และ style
-        // <Link
-        //   to={this.props.linkTo}
-        //   target="_blank"
-        //   rel="noopener noreferrer"
-        //   className="Linkproject"
-        // >
         <div
           className={`projectcard ${this.props.classNameProp || ""}`}
           style={this.props.styleProp}
@@ -30,22 +23,24 @@ class Projectcard extends Component {
             <h3>{this.props.title}</h3>
             <h4>tools: {this.props.tools}</h4>
             <p>{this.props.detail}</p>
-            <Link
-              to={this.props.linkTo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="Linkproject"
-            >
-              <p className="linkTitle">FrontEnd Github</p>
-            </Link>
-            <Link
-              to={this.props.link2To}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="Linkproject"
-            >
-              <p className="linkTitle">BackEnd Github</p>
-            </Link>
+            <div className="multiLink">
+              <Link
+                to={this.props.linkTo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="Linkproject"
+              >
+                <p className="linkTitle">FrontEnd Github</p>
+              </Link>
+              <Link
+                to={this.props.link2To}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="Linkproject"
+              >
+                <p className="linkTitle">BackEnd Github</p>
+              </Link>
+            </div>
           </div>
         </div>
         // </Link>
