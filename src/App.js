@@ -9,7 +9,7 @@ import Education from "./contents/education";
 import About from "./contents/About";
 import Skills from "./contents/skills";
 import Contact from "./contents/Contact";
-import Project from "./contents/Project"
+import Project from "./contents/Project";
 
 function App() {
   return (

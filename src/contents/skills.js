@@ -33,33 +33,48 @@ class Skills extends Component {
         },
         {
           id: 6,
-          name: "Expo",
-          logo: "https://www.svgrepo.com/show/341805/expo.svg",
+          name: "Vue3",
+          logo: "https://www.technicalife.net/wp-content/uploads/2022/11/logo.png",
         },
         {
           id: 7,
+          name: "NestJS",
+          logo: "https://vectorseek.com/wp-content/uploads/2023/09/NestJS-Logo-Vector.svg-.png",
+        },
+        {
+          id: 8,
+          name: "MongoDB",
+          logo: "https://fanz0.github.io/PersonalPortfolio.github.io/assets/logos/mongodb-logo.png",
+        },
+        {
+          id: 9,
           name: "Figma",
           logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/960px-Figma-logo.svg.png?20190122211436",
         },
         {
-          id: 8,
+          id: 10,
           name: "Github",
           logo: "https://www.svgrepo.com/show/445786/github.svg",
         },
         {
-          id: 9,
+          id: 11,
           name: "Mysql",
           logo: "https://www.svgrepo.com/show/303251/mysql-logo.svg",
         },
         {
-          id: 10,
+          id: 12,
           name: "Postman",
           logo: "https://iconape.com/wp-content/files/sw/371325/svg/371325.svg",
         },
         {
-          id: 11,
+          id: 13,
           name: "express.js",
-          logo: "https://seekvectors.com/files/download/express.js-logo.png",
+          logo: "https://images.seeklogo.com/logo-png/33/2/express-js-logo-png_seeklogo-339850.png",
+        },
+        {
+          id: 14,
+          name: "Expo",
+          logo: "https://www.svgrepo.com/show/341805/expo.svg",
         },
       ],
     };
@@ -72,10 +87,14 @@ class Skills extends Component {
       <div className="condiv skills">
         <h1 className="subtopic">My skills</h1>
         <ul>
-          {languagesData.map((language,index) => {
+          {languagesData.map((language, index) => {
             const animationDelay = index * delaystep;
             return (
-              <li key={language.id} className="language-item" style={{ animationDelay: `${animationDelay}s` }}>
+              <li
+                key={language.id}
+                className="language-item"
+                style={{ animationDelay: `${animationDelay}s` }}
+              >
                 <img
                   src={language.logo}
                   alt={language.name}
